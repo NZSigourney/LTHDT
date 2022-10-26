@@ -50,7 +50,7 @@ public class Sach
 			System.out.print("		+ Nhap ma sach: \t");
 			this.masach = in.nextLine();
 		 }
-		 while(this.masach.length() != 9);
+		 while(this.masach.length() != 5);
 	
 //nhập và kiểm tra ngày nhập
 		 String ngay;
@@ -98,6 +98,6 @@ public class Sach
 		int thang = this.ngaynhap.getMonth()+1;
 		int nam = this.ngaynhap.getYear();
 		if (nam >= 100)		{nam = 1900 + nam;}
-        return ("\n" + this.masach + "	\t" + ngay + "/" + thang + "/" + nam + "	\t" + this.dongia + "	\t\t\t" + this.soluong + "	\t\t" + this.nhaxuatban);
+        return ("\n" + this.masach + "	\t" + ngay + "/" + thang + "/" + nam + "	\t" + this.dongia + "	\t\t" + this.soluong + "	\t\t" + this.nhaxuatban);
     }
 }

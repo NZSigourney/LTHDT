@@ -38,7 +38,7 @@ public class sachthamkhao extends Sach
 // Xuất
     public String toString() 
     {
-        return super.toString() + ", Thue: " + this.thue;
+        return super.toString() + "\t" + this.thue;
     }
     
     

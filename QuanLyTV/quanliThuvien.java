@@ -64,7 +64,7 @@ public class quanliThuvien
 		System.out.println("Xuat cac sach tham khao trong thu vien:: ");
 		for(int i = 0; i < sachthamkhao.size(); i++) 
 		{
-			System.out.print("Ma Sach \t||\\t Ngay Nhap \t||\t Don Gia \t||\\t So Luong \t||\t Nha Xuat Ban \t||\t Thue |");
+			System.out.print("Ma Sach \t||\t Ngay Nhap \t||\t Don Gia \t||\t So Luong \t||\t Nha Xuat Ban \t||\t Thue |");
 			System.out.println(sachthamkhao.get(i).toString());
 		}
 	}
@@ -106,7 +106,8 @@ public class quanliThuvien
 	static ArrayList<sachgiaokhoa> arrsachgiaokhoa = new ArrayList<>();
     static ArrayList<sachthamkhao> arrsachthamkhao = new ArrayList<>();
     
-    @SuppressWarnings("unused")
+
+	@SuppressWarnings("unused")
 	public static void tinhtien() 
     {
 	    int soSachGiaoKhoa, soSachThamKhao;
@@ -159,6 +160,7 @@ public class quanliThuvien
   		{
   			System.err.println("!!!!! Khong tim thay ten nha xuat ban !!!!!");
   		}
+  		
   	// sách tham khảo		
   		sachthamkhao Found1 = null ;
   		for (sachthamkhao o : sachthamkhao) 
@@ -175,8 +177,7 @@ public class quanliThuvien
   		}
   		else 
   		{
-  			System.err.println("!!!!! Khong tim thay ten nha xuat ban !!!!!");
+  			System.out.println("!!!!! Khong tim thay ten nha xuat ban !!!!!");
   		}
   	}
-    
 }
