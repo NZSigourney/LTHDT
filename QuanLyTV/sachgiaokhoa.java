@@ -52,10 +52,11 @@ public class sachgiaokhoa extends Sach
 	public void nhapSach() 
 	{
         super.Nhap();
+        //in.nextLine();
         System.out.print("Nhap tinh trang sach (0 - cu/ 1 - moi): ");
         number = in.nextInt();
     }
 	public String toString() {
-        return super.toString() + ", tinh trang sach: " + this.tinhtrang(number);
+        return super.toString() + "\t" + this.tinhtrang(number);
     }
 }

@@ -41,7 +41,7 @@ public class quanliThuvien
 	}
 	
 //nhập thông tin sách tham khảo
-	static ArrayList<sachthamkhao> sachthamkhoa = new ArrayList<>();
+	static ArrayList<sachthamkhao> sachthamkhao = new ArrayList<>();
 	public static void nhap_sach_TK() 
 	{
 		
@@ -54,7 +54,7 @@ public class quanliThuvien
 			System.out.println("Nhap sach thu " + (i+1) + ":");
 			sachthamkhao TK = new sachthamkhao();
 			TK.nhapSach();
-			sachthamkhoa.add(TK);
+			sachthamkhao.add(TK);
 		}
 	}
 	
@@ -88,7 +88,7 @@ public class quanliThuvien
 		}
 		
 	// sách tham khảo
-		Collections.sort(sachthamkhoa, new Comparator<sachthamkhao>() 
+		Collections.sort(sachthamkhao, new Comparator<sachthamkhao>() 
 		{	
 			public int compare(sachthamkhao o1, sachthamkhao o2) 
 			{
@@ -97,7 +97,7 @@ public class quanliThuvien
 			}	
 		});
 		System.out.println("Sau khi sap xep: \n");
-		for(sachthamkhao o: sachthamkhoa) 
+		for(sachthamkhao o: sachthamkhao) 
 		{
 			System.out.println(o.toString());
 		}
@@ -105,6 +105,7 @@ public class quanliThuvien
 // tổng thành tiền cho các loại sách
 	static ArrayList<sachgiaokhoa> arrsachgiaokhoa = new ArrayList<>();
     static ArrayList<sachthamkhao> arrsachthamkhao = new ArrayList<>();
+    
     @SuppressWarnings("unused")
 	public static void tinhtien() 
     {
@@ -124,7 +125,7 @@ public class quanliThuvien
 	    }
 		tb = tongTienSachGiaoKhoa/sachgiaokhoa.size();
 	    System.out.print("Tong trung binh sach giao khoa la: " + tb);
-	    System.out.println("Tong Tien sach giao khoa = " + tongTienSachGiaoKhoa);
+	    System.out.println("\nTong Tien sach giao khoa = " + tongTienSachGiaoKhoa);
 	// Tổng tiền và tổng trung bình sách tham khảo
 	    for (int i = 0; i < arrsachthamkhao.size(); i++) 
 	    {
@@ -132,7 +133,7 @@ public class quanliThuvien
 	    }
 	    System.out.println("Tong tien sach tham khao = " + tongTienSachThamKhao);
 	    tb = tongTienSachThamKhao/sachthamkhao.size();
-	    System.out.print("Tong trung binh sach tham khao la: " + tb);
+	    System.out.print("\nTong trung binh sach tham khao la: " + tb);
 	}
     
 //tìm kiếm theo tên nhà xuất bản	
@@ -160,7 +161,7 @@ public class quanliThuvien
   		}
   	// sách tham khảo		
   		sachthamkhao Found1 = null ;
-  		for (sachthamkhao o : sachthamkhoa) 
+  		for (sachthamkhao o : sachthamkhao) 
   		{
   			if (o.get_nhaxuatban().equalsIgnoreCase(ten)) 
   			{

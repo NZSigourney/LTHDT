@@ -88,6 +88,7 @@ public class Sach
 // nhập tên nhà xuất bản
 		System.out.print("Nhap ten nha xuat ban: \t");
 		nhaxuatban = in.nextLine();
+		in.nextLine();
 	}
 	
 // Xuất
@@ -97,6 +98,6 @@ public class Sach
 		int thang = this.ngaynhap.getMonth()+1;
 		int nam = this.ngaynhap.getYear();
 		if (nam >= 100)		{nam = 1900 + nam;}
-        return "Ma Sach: " + this.masach + ", Ngay Nhap " + ngay + "/" + thang + "/" + nam + ", ten nha xuat ban: " + this.nhaxuatban + ", Don Gia: " +  this.dongia + ", so luong: " + this.soluong;
+        return ("\n" + this.masach + "	\t" + ngay + "/" + thang + "/" + nam + "	\t" + this.dongia + "	\t\t\t" + this.soluong + "	\t\t" + this.nhaxuatban);
     }
 }
